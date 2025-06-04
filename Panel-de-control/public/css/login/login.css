@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Open+Sans&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display:wght@500&family=Prompt:wght@200;300;400;500;600;700&family=Roboto:wght@400;700;900&family=Share+Tech+Mono&family=Ubuntu:wght@300;400;500;700&family=VT323&display=swap);
+@import url(./animaciones.css);
+:root {
+    --primario: #5e9e40;
+    --verdeClaro: #7ec461;
+    --verdeIntenso: #4b8c36;
+    --gris: #3b3b3b;
+    --blanco: #ffff;
+    --negro: #1f1e1e;
+    --grisClaro: #e8e8e8;
+  
+    --separacion: 5rem;
+  
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundari: "Lato", sans-serif;
+    --fuentePrecio: "Raleway", sans-serif;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+body{
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-logo{
+    width: 100%;
+    max-width: 600px; /*Ajusta el ancho máximo según tus necesidades */
+}
+
+.form-login {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 400px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el logo y el formulario */
+  }
+ 
+  .form-title {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form-login button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: var(--primario);
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .submit:hover{
+    cursor: pointer;
+  }
+  .submit:active {
+    background-color: var(--verdeIntenso);
+  }
+  .signup-link {
+    font-family: var(--fuenteSecundari);
+
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    text-decoration: underline;
+  }
+
+  /* Registro */
+  .form-registro {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 400px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el formulario de inicio de sesión y el de registro */
+  }
+
+  .input-container input, .form-registro button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }

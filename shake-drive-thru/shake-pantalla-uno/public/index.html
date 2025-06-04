@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/modals/modal-advertising.css" />
+    <link rel="stylesheet" href="css/modals/modal-order-correct.css" />
+    <link rel="stylesheet" href="css/principal/advertising.css" />
+    <link rel="stylesheet" href="css/principal/carousel.css" />
+    <link rel="stylesheet" href="css/principal/order-list.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Modal Publicidad -->
+      <div class="modal-publicidad swiper ">
+        <div id="publicidad-principal" class="swiper-wrapper">
+       <!-- Imagenes principales -->
+        </div>
+      </div>
+
+      <!-- Modal Order List -->
+      <div class="modal-order-correct ocultar-order-list display-off">
+        <div class="title-logo-order-correct">
+          <div class="text-order-correct">
+            <h2>¿Tu orden es correcta?</h2>
+          </div>
+          <div class="logo-order-correct">
+            <img src="assets/Logo SS 3240x2180px -cut.png" alt="logo-shake">
+          </div>
+        </div>
+
+        <div class="content-order-correct">
+          <ul class="ulList-orders-correct">
+            
+          </ul>
+        </div>
+
+        <div class="footer-order-correct">
+          <div class="footer-order-total">
+            <!-- <h2>Por favor, preparalo.</h2> -->
+            <h2>Total:</h2>
+            <p>$0.00</p>
+          </div>
+          <div class="footer-order-title-one">
+            <h2>Gracias por ordenar.</h2>
+          </div>
+          <div class="footer-order-icon">
+            <div class="icon-one">
+              <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 256 256"><path fill="#ffffff" d="M240 112h-28.69L168 68.69A15.86 15.86 0 0 0 156.69 64H44.28A16 16 0 0 0 31 71.12L1.34 115.56A8.07 8.07 0 0 0 0 120v48a16 16 0 0 0 16 16h17a32 32 0 0 0 62 0h66a32 32 0 0 0 62 0h17a16 16 0 0 0 16-16v-40a16 16 0 0 0-16-16ZM44.28 80h112.41l32 32H23ZM64 192a16 16 0 1 1 16-16a16 16 0 0 1-16 16Zm128 0a16 16 0 1 1 16-16a16 16 0 0 1-16 16Z"/></svg>
+            </div>
+            <div class="icon-two">
+              <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24"><path fill="#5e9e40" d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"/></svg>
+            </div>
+          </div>
+          <div class="footer-order-title-two">
+            <h3>Nos vemos en la siguiente ventanilla</h3>
+          </div>
+        </div>
+
+      </div>
+<!-- ************************************************************ -->
+
+      <!-- Productos promocionados -->
+
+      <div class="div-product-advertising modal-publicidad-dos swiper2">
+
+         <div id="publicidad-secundaria" class="swiper-wrapper">
+         
+        </div>
+        
+      </div>
+
+     
+      <!-- Lista de ordenes -->
+      <div class="div-orders-suggestion">
+        <div class="container-order-list">
+          <div class="title-order-list">
+            <h2>Lista de productos:</h2>
+            <div class="amount-products esfera-animada">
+              <p>0</p>
+            </div>
+          </div>
+          <div class="ul-order-list">
+            <ul class="ulList-orders">
+
+
+            </ul>
+          </div>
+          <div class="order-list-total">
+            <div class="text-total"><h2>Total</h2></div>
+            <div class="amount-total-total"><h2>$0.00</h2></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

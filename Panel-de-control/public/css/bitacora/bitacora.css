@@ -1,0 +1,146 @@
+/* Utilidades */
+a{
+  text-decoration: none !important;
+}
+
+.btn-ver-bitacora {
+  width: auto;
+  font-size: 2.5rem;
+  font-family: var(--fuenteSecundari);
+  color: #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-ver-bitacora:hover{
+  cursor: pointer;
+}
+/* Estilos para imitar el botón btn-outline-success de Bootstrap */
+.btn-regresar {
+  width: auto;
+  font-size: 2.5rem;
+  font-family: var(--fuenteSecundari);
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+  padding-right: 10px;
+  border-right: solid 2px var(--grisClaro);
+}
+
+.btn-regresar:hover {
+  cursor: pointer;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.centrar-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Administrador */
+.fecha-inicial label {
+  max-width: 30rem;
+  width: 100%;
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+
+.input-date {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  color: #0d0c22;
+  transition: .3s ease;
+}
+
+.input-date::placeholder {
+  color: #9e9ea7;
+}
+
+.input-date:focus {
+  outline: none;
+  border-color: rgba(75, 140, 54, 0.5);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(68, 126, 49 / 10%);
+}
+
+.contenedor-admin {
+  overflow: hidden;
+  height: auto;
+  background: #ecf0f1;
+}
+
+.admin-header {
+  padding-top: 2rem;
+}
+
+
+/* Tabla */
+.alinear {
+  padding-top: 1rem !important;
+}
+
+.container-table {
+  margin-top: 2rem;
+}
+
+.table {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Media Queries para hacer la página responsive */
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .admin-header {
+    padding-top: 1rem;
+  }
+  .input-date {
+    font-size: 1rem;
+  }
+  .table {
+    font-size: 1rem;
+  }
+  .fecha-inicial label {
+    font-size: 1.5rem;
+    text-align: center; 
+    margin-right: 10px; 
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media screen and (max-width: 576px) {
+  .admin-header {
+    padding-top: 0.5rem;
+  }
+  .input-date {
+    font-size: 0.8rem;
+  }
+  .table {
+    font-size: 0.8rem;
+  }
+  .fecha-inicial label {
+    font-size: 1rem;
+    text-align: center; 
+    margin-right: 10px; 
+  }
+  
+}

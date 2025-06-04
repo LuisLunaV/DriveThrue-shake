@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Open+Sans&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display:wght@500&family=Prompt:wght@200;300;400;500;600;700&family=Roboto:wght@400;700;900&family=Share+Tech+Mono&family=Ubuntu:wght@300;400;500;700&family=VT323&display=swap);
+
+:root {
+  /* --primario:#95d701; */
+  --primario: #5e9e40;
+  --gris: #3b3b3b;
+  --blanco: #ffff;
+  --negro: #1f1e1e;
+  --grisClaro: #f7faff;
+
+  --separacion: 5rem;
+
+  --fuentePrincipal: "Roboto", sans-serif;
+  --fuenteSecundari: "Lato", sans-serif;
+  --fuentePrecio: "Raleway", sans-serif;
+}
+/* Global */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem -> 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* overflow: hidden; */
+  height: 100vh;
+  background-color: var(--negro);
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
+}
+
+@media (min-width: 2160px) and (min-height: 3840px) {
+}
+
+
+/* Utils */
+
+.container {
+  height: 100%;
+}
+.display-off{
+  display: none;
+}
+.ocultar-advertising{
+  opacity: 0;
+}
+.ocultar-order-list{
+  opacity: 0;
+}
+
+.show-amount{
+opacity: 1 !important;
+}
+
+
+.height-min{
+  font-size: 4rem !important;
+}

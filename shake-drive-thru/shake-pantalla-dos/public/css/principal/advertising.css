@@ -1,0 +1,25 @@
+/* Publicidad del producto */
+.div-product-advertising {
+  overflow: hidden;
+  background-color: var(--grisClaro);
+    height: 60%;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  .modal-publicidad-dos{
+    background-color: #f7faff;
+    width: 100%;
+  }
+  .modal-publicidad-dos .swiper-slide{
+    display: flex;
+    justify-content: center;
+  }
+  .modal-publicidad-dos img{
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+  }
+  

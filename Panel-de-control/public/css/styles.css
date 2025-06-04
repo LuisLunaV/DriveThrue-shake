@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Open+Sans&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display:wght@500&family=Prompt:wght@200;300;400;500;600;700&family=Roboto:wght@400;700;900&family=Share+Tech+Mono&family=Ubuntu:wght@300;400;500;700&family=VT323&display=swap);
+@import url(normalize.css);
+@import url(upload.css);
+@import url(modal.css);
+@import url(loader.css);
+@import url(bitacora/bitacora.css);
+:root {
+  --primario: #5e9e40;
+  --verdeClaro: #7ec461;
+  --verdeIntenso: #4b8c36;
+  --gris: #3b3b3b;
+  --blanco: #ffff;
+  --negro: #1f1e1e;
+  --grisClaro: #e8e8e8;
+
+  --separacion: 5rem;
+
+  --fuentePrincipal: "Roboto", sans-serif;
+  --fuenteSecundari: "Lato", sans-serif;
+  --fuentePrecio: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /** 1REM = 10pX **/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* background-color: #f3f3dc; */
+  height: 100vh;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
+}
+li{
+  list-style: none;
+}
+
+/* Resolcion para dispositivos moviles muy pequeños: */
+@media (max-width: 575px) {
+  .titulo-panel {
+    display: none !important;
+  }
+  .main-options {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .container-options {
+    overflow: hidden;
+    width: 80%;
+  }
+}
+
+/* Resolcion para dispositivos moviles pequeños: */
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo-shake{
+    margin: 0 auto;
+  }
+  .titulo-panel {
+    display: none !important;
+  }
+  .main-options {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .container-options {
+    width: 80%;
+  }
+}
+
+/* Resolcion para tablets: */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-shake{
+    margin: 0 auto;
+  }
+  .titulo-panel {
+    display: none !important;
+  }
+  .main-options {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .container-options {
+    width: 70%;
+  }
+}
+/* Resolcion para pc de escritorio:  */
+@media (min-width: 972px) {
+  .titulo-panel {
+    width: 50%;
+    padding: 0 2.5rem;
+  }
+  .titulo-panel .user-name span {
+    font-size: 3rem;
+  }
+
+  .main-options {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container-options {
+    width: 40%;
+  }
+}
+
+/* Globales */
+nav {
+  height: 15%;
+  background-color: var(--negro);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.cont-publicidad-principal{
+  width: auto;
+  height: auto;
+}
+
+.titulo-panel {
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  gap:5px;
+}
+/* Estilos para imitar el botón btn-outline-success de Bootstrap */
+.btn-cerrar-sesion {
+  width: auto;
+  font-size: 2.5rem;
+  font-family: var(--fuenteSecundari);
+  color: #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-cerrar-sesion:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.titulo-panel .user-name {
+  padding-right: 10px;
+  border-right: solid 2px var(--grisClaro);
+}
+.titulo-panel .user-name span{
+  color: white;
+  font-family: var(--fuenteSecundari);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Opciones del apartado prncipal */
+.main-options {
+  background-color: var(--grisClaro);
+  display: flex;
+  width: 100%;
+  height: 85%;
+}
+
+.container-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--blanco);
+  box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01),
+    0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09),
+    0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 2.3rem;
+  height: 65%;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.shakeshack.com.mx/wp-content/uploads/2019/02/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/login/login.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="div-logo">
+        <img src="../assets/Logo SS 3240x2180px -cut.png" alt="">
+    </div>
+    <form class="form-registro" method="post">     
+        <p class="form-title">Ingresa tus datos</p>
+        <div class="input-container">
+          <input type="text" name="User_NumEmpleado" placeholder="Numero de empleado" required>
+          <span>
+          </span>
+      </div>
+        <div class="input-container">
+            <input type="text" name="User_Name" placeholder="Nombre completo" required>
+            <span>
+            </span>
+        </div>
+         <div class="input-container">
+           <input type="email" name="User_Email" placeholder="Correo electronico" required>
+           <span>
+           </span>
+       </div>
+       <div class="input-container">
+           <input id="passwordUno" type="password" name="User_Password" placeholder="Ingresa tu password minimo 10 cararcteres" minlength="10" required>
+         </div>
+         <div class="input-container">
+            <input id="passwordDos" type="password" name="User_PassworDos" placeholder="Repite tu password" minlength="10" required>
+          </div>
+          <button type="submit" class="submit">
+         Crear cuenta
+       </button>
+ 
+       <p class="signup-link">
+         <a href="./login.html">Regresar</a>
+       </p>
+    </form>
+ <script src="../index.js" type="module"></script>
+</body>
+</html>

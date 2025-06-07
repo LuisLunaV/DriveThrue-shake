@@ -23,6 +23,7 @@ button:hover {
 button:active {
   background-color: var(--verdeIntenso);
 }
+
 .custum-file-upload {
   height: 200px;
   width: 300px;

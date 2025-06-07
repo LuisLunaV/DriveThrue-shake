@@ -29,7 +29,7 @@ class Server {
 
    // Lectura del body
    this.app.use(cors({
-  origin: ['http://192.168.100.11:8080','http://192.168.100.11:8081'], // Cambia según tu frontend
+  origin: ['http://localhost:8082','http://192.168.100.11:8080','http://192.168.100.11:8081'], // Cambia según tu frontend
   methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
 }));
